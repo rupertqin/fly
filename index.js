@@ -2,7 +2,9 @@ const http = require("http")
 const https = require("https")
 
 const methods = ['get', 'post', 'head', 'put', 'delete'];
-const httpRequest = {};
+const httpRequest = function(url) {
+  return httpRequest.get(url)
+};
 
 for (let actionName of methods) {
   httpRequest[actionName] = (...args) => action(actionName, ...args)
