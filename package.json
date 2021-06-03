@@ -1,8 +1,11 @@
 {
-  "name": "fly",
+  "name": "@vicesoul/fly",
   "version": "0.0.1",
   "description": "http reqest lib",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "directories": {
     "test": "test"
   },

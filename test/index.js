@@ -1,5 +1,5 @@
-const request = require("../")
+const fly = require("../")
 
-request('http://www.baidu.com').then(data => {
+fly('http://www.example.com').then(data => {
   console.log('data', data)
 })

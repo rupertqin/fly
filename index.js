@@ -90,5 +90,3 @@ function action(method, url, body = null) {
 }
 
 module.exports = httpRequest
-
- 
