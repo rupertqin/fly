@@ -10,7 +10,14 @@ for (let actionName of methods) {
   httpRequest[actionName] = (...args) => action(actionName, ...args)
 }
 
-function action(method, url, body = null) {
+
+/**
+ * Request action.
+ * @param {string} method - The method of the request.
+ * @param {string} url - The url of the request.
+ * @param {string} body - The response of the request.
+ */
+function action(method, url, body = '') {
   if (!methods.includes(method)) {
     throw new Error(`Invalid method: ${method}`);
   }
